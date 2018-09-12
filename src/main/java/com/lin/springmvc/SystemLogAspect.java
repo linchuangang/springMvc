@@ -1,18 +1,13 @@
-package com.rocky.springmvc;
+package com.lin.springmvc;
 
-import org.apache.commons.logging.Log;
 import org.aspectj.lang.JoinPoint;
 import org.aspectj.lang.ProceedingJoinPoint;
 import org.aspectj.lang.annotation.*;
 import org.springframework.stereotype.Component;
 import org.springframework.web.context.request.RequestContextHolder;
 import org.springframework.web.context.request.ServletRequestAttributes;
-import org.springframework.web.context.request.RequestContextHolder;
-import org.springframework.web.context.request.ServletRequestAttributes;
 
-import javax.annotation.Resource;
 import javax.servlet.http.HttpServletRequest;
-import javax.servlet.http.HttpSession;
 import java.lang.reflect.Method;
 
 import org.slf4j.Logger;
@@ -29,7 +24,7 @@ public class SystemLogAspect {
     private static final Logger logger = LoggerFactory.getLogger(SystemLogAspect.class);
 
     // Controller层切点
-    @Pointcut("@annotation(com.rocky.springmvc.SystemControllerLog)")
+    @Pointcut("@annotation(com.lin.springmvc.SystemControllerLog)")
     public void controllerAspect() {
     }
 

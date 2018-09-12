@@ -1,4 +1,4 @@
-package com.rocky.springmvc;
+package com.lin.springmvc;
 
 import java.lang.annotation.Documented;
 import java.lang.annotation.ElementType;
